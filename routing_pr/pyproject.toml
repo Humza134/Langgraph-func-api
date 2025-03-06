@@ -1,0 +1,22 @@
+[project]
+name = "routing-pr"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Humza134", email = "mhumza13420@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-google-genai>=2.0.11",
+    "langgraph>=0.3.5",
+    "python-dotenv>=1.0.1",
+]
+
+[project.scripts]
+routing-pr = "routing_pr:main"
+routing-pr = "routing_pr.hello_router:call_router"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
