@@ -1,0 +1,20 @@
+[project]
+name = "parallel-pr"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Humza134", email = "mhumza13420@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langgraph>=0.3.5",
+]
+
+[project.scripts]
+parallel-pr = "parallel_pr:main"
+parallel = "parallel_pr.parallel:call_parallel"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
